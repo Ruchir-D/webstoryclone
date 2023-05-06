@@ -10,7 +10,7 @@ export default function Home() {
       {/* AMP Story player */}
       <div className=" flex justify-center items-center relative overflow-hidden w-screen h-screen">
       <amp-story-player className="rounded-lg w-screen h-screen" >
-        <a href="/webStory/story.html">
+        <a href="../pages/story">
           Stories in AMP
         </a>
       </amp-story-player>
