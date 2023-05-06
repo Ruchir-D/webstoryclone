@@ -207,10 +207,10 @@ export default function Home() {
 
           {/* <!-- Second Layer --> */}
           <amp-story-grid-layer template="thirds">
-              <div grid-area="middle-third" animate-in-duration="3s" animate-in-delay=".5s" animate-in="fade-in">
+              <div grid-area="middle-third" animate-in-duration="3s" animate-in-delay=".5s" animate-in="fade-in" className='flex justify-center items-center'>
                   <h2 style={{fontSize: "20px",
                       padding: "10px",
-                      margin: "5px",
+                      margin: "auto",
                       backgroundColor: "rgba(0,0,0,.5)",
                       fontFamily: "'Roboto', sans-serif",
                       color: "#fff",
