@@ -39,11 +39,7 @@ export default function Home() {
 
                 {/* <!-- Second Layer --> */}
                 <amp-story-grid-layer template="vertical" style={{padding: "25px"}}>
-                    <div>
-                        <a href="https://www.propreturns.com/">
-                            <img src="/webStory/images/logo_best.jpg"  style={{backgroundColor: "white", width: "35%"}} alt="" />
-                        </a>
-                    </div>
+                            <a href='https://propreturns.com'></a><amp-img width="50px" height="40px" src="/webStory/images/logo_best.jpg"  style={{backgroundColor: "white", width: "35%"}} alt="" />                       
                 </amp-story-grid-layer>
 
                 {/* <!-- Third Layer --> */}
@@ -213,7 +209,7 @@ export default function Home() {
           </amp-story-grid-layer>
 
           {/* <!-- Second Layer --> */}
-          <amp-story-grid-layer layout="thirds">
+          <amp-story-grid-layer template="thirds">
               <div grid-area="middle-third" animate-in-duration="3s" animate-in-delay=".5s" animate-in="fade-in">
                   <h2 style={{fontSize: "20px",
                       padding: "10px",
