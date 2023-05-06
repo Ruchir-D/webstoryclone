@@ -9,6 +9,8 @@ export default function Home() {
       <title>Story</title>
       <script async key="amp-story" custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
       <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js" />
+      <script async custom-element="amp-story-auto-advance" src="https://cdn.ampproject.org/v0/amp-story-auto-advance-0.1.js"></script>
+
 
     </Head>
 
@@ -19,11 +21,12 @@ export default function Home() {
       publisher-logo-src="https://amp.dev/favicons/coast-228x228.png"
       poster-portrait-src="https://amp.dev/static/samples/img/story_dog2_portrait.jpg"
       poster-square-src="https://amp.dev/static/samples/img/story_dog2_square.jpg"
-      poster-landscape-src="https://amp.dev/static/samples/img/story_dog2_landscape.jpg">
+      poster-landscape-src="https://amp.dev/static/samples/img/story_dog2_landscape.jpg"
+      auto-advance-after="5s">
 
 
   {/* <!-- Cover Page --> */}
-            <amp-story-page id="cover" style={{flex: "auto"}}>
+            <amp-story-page id="cover" style={{flex: "auto"}} auto-advance-after="5s">
 
                 {/* <!-- First Layer --> */}
                 <amp-story-grid-layer template="fill">
@@ -92,10 +95,11 @@ export default function Home() {
 
                     </div>
                 </amp-story-grid-layer>
+                <amp-story-page-advancement auto-advance-after="5s"></amp-story-page-advancement>
               </amp-story-page>
             
    {/* <!-- Second Page --> */}
-            <amp-story-page id="page2">
+            <amp-story-page id="page2" auto-advance-after="5s">
 
                     {/* <!-- First Layer --> */}
                     <amp-story-grid-layer template="fill">
@@ -146,7 +150,7 @@ export default function Home() {
               </amp-story-page>
   
      {/* <!-- Third Page --> */}
-            <amp-story-page id="page2">
+            <amp-story-page id="page2" auto-advance-after="5s">
 
         {/* <!-- First Layer --> */}
         <amp-story-grid-layer template="fill">
@@ -182,7 +186,7 @@ export default function Home() {
                     fontFamily: "'Roboto', sans-serif",
                     marginTop: '7px',
                     background: "rgba(0,0,0,.5)",
-                    padding: "11px"}}>The BMW G 310 GS is priced from Rs 3.20 lakh (ex-showroom), but is a worthy mention considering it is the entry point to the BMW Motorrad's GS adventure touring range and is just a little over Rs 3 lakh.</p>
+                    padding: "11px"}}>he BMW G 310 GS is priced from Rs 3.20 lakh (ex-showroom), but is a worthy mention considering it is the entry point to the BMW Motorrad's GS adventure touring range and is just a little over Rs 3 lakh.</p>
             </div>
         </amp-story-grid-layer>
 
