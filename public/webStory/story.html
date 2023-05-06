@@ -9,13 +9,29 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     
     <title>Story</title>
+    <style>
+        .inner-align-end-bg {
+             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.61));
+             padding: 68px 16px 16px;
+         }
+        .align-end {
+             align-content: end;
+             padding: 0;
+         }
+         .inner-align-end {
+             background: rgba(0,0,0,0);
+             padding: 68px 16px 16px;
+         }
+
+    </style>
+
 </head>
 <body>
     <amp-story standalone
                title="Web Story">
 
         <!-- Cover Page -->
-            <amp-story-page id="cover">
+            <amp-story-page id="cover" style="flex: auto">
 
                 <!-- First Layer -->
                 <amp-story-grid-layer template="fill">
@@ -36,8 +52,8 @@
                 </amp-story-grid-layer>
 
                 <!-- Third Layer -->
-                <amp-story-grid-layer template="thirds" style="padding: 10px; padding-top: 150px;">
-                    <div grid-area="lower-third">
+                <amp-story-grid-layer template="vertical" class="align-end">
+                    <div class="inner-align-end">
                         <h2 style="font-size: 24px;
                             line-height: 28px;
                             padding: 8px;
@@ -84,8 +100,8 @@
                     </amp-story-grid-layer>
 
                     <!-- Second Layer -->
-                    <amp-story-grid-layer template="thirds" style="padding: 10px;">
-                        <div grid-area="lower-third" animate-in-duration="2s" animate-in-delay=".5s" animate-in="fly-in-bottom">
+                    <amp-story-grid-layer template="vertical" class="align-end">
+                        <div class="inner-align-end" animate-in-duration="2s" animate-in-delay=".5s" animate-in="fly-in-bottom">
                             <h2 style="font-size: 24px;
                                 line-height: 28px;
                                 padding: 8px;
@@ -111,14 +127,13 @@
 
                     <!-- Third Layer -->
 
-                    <amp-story-grid-layer template="thirds">
-                        <div grid-area="lower-third" style="padding-top: 200px; padding-left: 200px;" animate-in-duration="2s" animate-in-delay="2s" animate-in="fade-in" style="opacity: 0;">
+                    <amp-story-grid-layer template="vertical" class="align-end">
+                        <div class="inner-align-end-bg" style="text-align: right;" animate-in-duration="2s" animate-in-delay="2s" animate-in="fade-in" style="opacity: 0;">
                             <a style="text-decoration: none; color: #fff; font-family: 'Roboto', sans-serif; font-size: 15px;" href="https://www.propreturns.com/">PROPRETURNS.COM</a>
                         </div>
                     </amp-story-grid-layer>
                     
                 </amp-story-page>
-
 
          <!-- Third Page -->
                 <amp-story-page id="page2">
@@ -133,8 +148,8 @@
                     </amp-story-grid-layer>
 
                     <!-- Second Layer -->
-                    <amp-story-grid-layer template="thirds" style="padding: 10px;">
-                        <div grid-area="lower-third" animate-in-duration="2s" animate-in-delay=".5s" animate-in="fly-in-bottom">
+                    <amp-story-grid-layer template="vertical" class="align-end">
+                        <div class="inner-align-end" animate-in-duration="2s" animate-in-delay=".5s" animate-in="fly-in-bottom">
                             <h2 style="font-size: 24px;
                                 line-height: 28px;
                                 padding: 8px;
@@ -160,8 +175,8 @@
 
                     <!-- Third Layer -->
 
-                    <amp-story-grid-layer template="thirds">
-                        <div grid-area="lower-third" style="padding-top: 200px; padding-left: 200px;" animate-in-duration="2s" animate-in-delay="2s" animate-in="fade-in" style="opacity: 0;">
+                    <amp-story-grid-layer template="vertical" class="align-end">
+                        <div class="inner-align-end-bg" style="text-align: right;" animate-in-duration="2s" animate-in-delay="2s" animate-in="fade-in" style="opacity: 0;">
                             <a style="text-decoration: none; color: #fff; font-family: 'Roboto', sans-serif; font-size: 15px;" href="https://www.propreturns.com/">PROPRETURNS.COM</a>
                         </div>
                     </amp-story-grid-layer>
