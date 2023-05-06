@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 export const config = { amp: true }
 
@@ -7,9 +8,8 @@ export default function Home() {
   <>
     <Head>
       <title>Story</title>
-      <script async key="amp-story" custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
-      <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js" />
-      <script async custom-element="amp-story-auto-advance" src="https://cdn.ampproject.org/v0/amp-story-auto-advance-0.1.js"></script>
+      <Script async key="amp-story" custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
+      <Script async custom-element="amp-story-auto-advance" src="https://cdn.ampproject.org/v0/amp-story-auto-advance-0.1.js"></Script>
 
 
     </Head>
@@ -22,7 +22,7 @@ export default function Home() {
       poster-portrait-src="https://amp.dev/static/samples/img/story_dog2_portrait.jpg"
       poster-square-src="https://amp.dev/static/samples/img/story_dog2_square.jpg"
       poster-landscape-src="https://amp.dev/static/samples/img/story_dog2_landscape.jpg"
-      auto-advance-after="5s">
+      >
 
 
   {/* <!-- Cover Page --> */}
@@ -201,7 +201,7 @@ export default function Home() {
               </amp-story-page>
 
    {/* Last Page */}
-            <amp-story-page id="last-page">
+            <amp-story-page id="last-page" auto-advance-after="5s">
 
           {/* <!-- First Layer --> */}
           <amp-story-grid-layer template="fill">
