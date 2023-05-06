@@ -9,8 +9,6 @@ export default function Home() {
     <Head>
       <title>Story</title>
       <Script async key="amp-story" custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
-      <Script async custom-element="amp-story-auto-advance" src="https://cdn.ampproject.org/v0/amp-story-auto-advance-0.1.js"></Script>
-
 
     </Head>
 
@@ -91,7 +89,6 @@ export default function Home() {
 
                     </div>
                 </amp-story-grid-layer>
-                <amp-story-page-advancement auto-advance-after="5s"></amp-story-page-advancement>
               </amp-story-page>
             
    {/* <!-- Second Page --> */}
