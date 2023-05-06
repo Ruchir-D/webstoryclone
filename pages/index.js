@@ -37,7 +37,7 @@ export default function Home() {
 
                 {/* <!-- Second Layer --> */}
                 <amp-story-grid-layer template="vertical" style={{padding: "25px"}}>
-                            <a href='https://propreturns.com'></a><amp-img width="50px" height="40px" src="/webStory/images/logo_best.jpg"  style={{backgroundColor: "white", width: "35%"}} alt="" />                       
+                            <amp-img width="50px" height="40px" src="/webStory/images/logo_best.jpg"  style={{backgroundColor: "white", width: "35%"}} alt="" />                       
                 </amp-story-grid-layer>
 
                 {/* <!-- Third Layer --> */}
